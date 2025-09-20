@@ -1,0 +1,29 @@
+[project]
+name = "udemy"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Alex"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "python-dotenv (>=1.1.1,<2.0.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-core (>=0.3.72,<0.4.0)",
+    "langchain-community (>=0.3.27,<0.4.0)",
+    "langchain-ollama (>=0.3.6,<0.4.0)",
+    "pydantic (>=2.11.7,<3.0.0)",
+    "langchain-tavily (>=0.2.11,<0.3.0)",
+    "langchain-openai (>=0.3.28,<0.4.0)",
+    "langgraph[visualization] (>=0.6.2,<0.7.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
